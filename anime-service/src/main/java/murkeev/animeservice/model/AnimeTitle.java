@@ -42,4 +42,9 @@ public class AnimeTitle {
     @Column(name = "count_of_episodes")
     private int episodeCount;
 
+    @ElementCollection(targetClass = String.class, fetch = FetchType.EAGER)
+    @CollectionTable(name = "anime_series_url", joinColumns = @JoinColumn(name = "anime_id"))
+    @Column(name = "series_urls")
+    private Set<String> seriesUrl;
+
 }

@@ -1,0 +1,11 @@
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+.idea
+*.iws
+*.iml
+*.ipr
+anime-service/src/main/resources
+user-service/src/main/resources
+api-gateway/src/main/resources/application.yaml

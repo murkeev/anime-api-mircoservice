@@ -1,4 +1,4 @@
-package murkeev.userService.dto;
+package murkeev.authService.model;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Pattern;
@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class RegistrationUserDto  {
+public class RegistrationUserDto {
     @Pattern(regexp = "^[a-zA-Z0-9]{4,}$",
             message = "Username must be at least 4 characters long and contain only letters and digits")
     private String username;

@@ -1,15 +1,15 @@
 package murkeev.userService.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.validation.constraints.NotNull;
+import lombok.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class LoginRequestDto {
-    private String login;
+
+    @NotNull(message = "Login cannot be null")
+    private String username;
     private String password;
 }
